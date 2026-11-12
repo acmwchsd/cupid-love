@@ -1,2 +1,4 @@
 def main() -> None:
-    print("Hello from cupid-love!")
+    from .server import main as run_server
+
+    run_server()

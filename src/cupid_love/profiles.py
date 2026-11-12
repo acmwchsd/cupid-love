@@ -88,7 +88,7 @@ def new_profile(
             raise ValueError(
                 f"unknown personality traits '{key}'. use one of: {', '.join(TRAITS)}"
             )
-        if not 1 <= int(values) <= 5:
+        if not 1 <= int(value) <= 5:
             raise ValueError(f"{key} must be between 1 and 5.")
         traits[key] = int(value)
     for value, allowed, label in (

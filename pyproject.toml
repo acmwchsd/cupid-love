@@ -1,7 +1,7 @@
 [project]
 name = "cupid-love"
 version = "0.1.0"
-description = "Add your description here"
+description = "A small matchmaking MCP server built with FastMCP"
 readme = "README.md"
 authors = [
     { name = "Visal Som", email = "visalsom.app@gmail.com" }
