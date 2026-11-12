@@ -68,36 +68,6 @@ uv run fastmcp list --command "uv run cupid-love"
 
 Replace `/ABSOLUTE/PATH/TO/cupid-love` with the full path to this folder (run `pwd` inside it).
 
-### Claude Desktop
-
-Open **Settings → Developer → Edit Config** and add:
-
-```json
-{
-  "mcpServers": {
-    "cupid-love": {
-      "command": "uv",
-      "args": ["--directory", "/ABSOLUTE/PATH/TO/cupid-love", "run", "cupid-love"]
-    }
-  }
-}
-```
-
-Restart Claude Desktop. If it can't find `uv`, set `"command"` to the full path from `which uv`
-(for example `/opt/homebrew/bin/uv`).
-
-### Claude Code
-
-```bash
-claude mcp add cupid-love -- uv --directory /ABSOLUTE/PATH/TO/cupid-love run cupid-love
-```
-
-### MCP Inspector (optional, needs Node.js)
-
-```bash
-npx @modelcontextprotocol/inspector uv run cupid-love
-```
-
 ## What the server offers
 
 | Kind     | Name                      | What it does                                         |
